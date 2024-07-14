@@ -9,6 +9,42 @@
 </head>
 <body>
 
+    <!-- Login Overlay -->
+    <div id="loginOverlay" class="sec-login-overlay">
+    <div class="sec-login-overlay-container">
+        <span class="sec-login-overlay-close" id="closeBtn">&times;</span>
+        <div class="sec-login-overlay-contents">
+            <div class="sec-login-overlay-contents-top">
+                <div class="sec-login-overlay-logo-wrapper">
+            <div class="sec-login-overlay-logo">
+                <img src="assets/images/Logo/Logo.png">
+            </div>
+        </div>
+            <h3>Pusat Informasi Pelabuhan</h3>
+            <h3>Perikanan Nusa Utara</h3>
+        </div>
+
+            <div class="sec-login-overlay-line-separate"> </div>
+            <h2>Masuk Akun</h2>
+
+            <div class="sec-login-overlay-contents-bottom">
+                <form class="sec-login-overlay-input-wrapper">
+                <input class="sec-login-overlay-input" type="email" placeholder="Email">
+                <input class="sec-login-overlay-input" type="password" placeholder="Password">
+                <button class="sec-login-contents-bottom-submit-btn" type="submit">Masuk</button>
+            </form>
+            </div>
+
+            <div class="sec-login-contents-bottom-link">
+            <a href="#">Bantuan</a>
+            <a href="#">Mendaftar Sekarang</a>
+        </div>
+
+        </div>
+
+    </div>
+</div>
+
     <!-- Navbar -->
 <nav class="navbar">
     <ul>
@@ -20,7 +56,9 @@
         <li><a href="berita_list.html">Berita</a></li>
         <li><a href="#">Statistik</a></li>
         <div class="right-nav">
-            <i class="material-icons">account_circle</i>
+
+            <!-- Login Button -->
+            <button id="loginBtn" class="sec-login-btn"><i class="material-icons">account_circle</i></button>
         </div>
     </ul>
 </nav>
@@ -136,8 +174,12 @@
                 </div>
                 <div class="statistik-content-right">
                     <div class="about-website-card">
+                        <div class="about-website-card-wrapper">
                         <h3>Testing</h1>
-                        <p>testing</p>
+                            <div class="about-website-card-text-desc">
+                        <p>testingsfddffsdgsdfgsdgdsfgsdfgsdfgfdsweaewfawfawefwafwfg</p>
+                    </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -373,6 +415,7 @@
 </div>
 </footer>
 
+<script src="assets/js/main_script.js"></script>
 
 </body>
 </html>

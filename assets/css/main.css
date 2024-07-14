@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     justify-content: center;
+    align-items: center;
 }
 
 h1{
@@ -26,6 +27,7 @@ h1{
     overflow: hidden;
     position:fixed;
     top: 0;
+    z-index: 0;
 }
 
 .navbar li{
@@ -77,6 +79,126 @@ h1{
     margin: 0;
     margin-top: 90px;
     overflow-x: hidden;
+}
+
+/* -- Login Overlay -- */
+
+.sec-login-btn{
+    background-color: none;
+    background: none;
+    background-image: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sec-login-overlay-close{
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    right: 41%;
+    top: 30%;
+    cursor: pointer;
+}
+
+.sec-login-overlay{
+    display: none;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.221);
+    transition: display 0.3s ease-in-out;
+}
+
+.sec-login-overlay-container{
+    margin:15% auto;
+    width: 80%;
+    max-width: 500px;
+    background-color: white;
+    border-top: solid 50px #312FA7;
+    border-radius: 20px;
+}
+
+.sec-login-overlay-contents{
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.sec-login-overlay-contents h2{
+    margin-bottom: 2rem;
+}
+
+.sec-login-overlay-contents-top{
+    margin: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sec-login-overlay-logo-wrapper{
+    display: flex;
+    width:100%;
+    justify-content: center;
+}
+
+.sec-login-overlay-logo{
+    display: flex;
+    width: 122px;
+    height: 122px;
+}
+
+.sec-login-overlay-logo img{
+    width: 100%;
+    height: auto;
+}
+
+.sec-login-overlay-line-separate{
+    background-color: grey;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 1rem;
+}
+
+.sec-login-overlay-input{
+    width:100%;
+    background-color: white;
+    border: solid 1px black;
+    padding: 10px 0;
+    margin: .7rem 0;
+    border-radius: 5px;
+}
+
+.sec-login-overlay-input-wrapper{
+    width: 100%;
+    padding: 0;
+}
+
+.sec-login-overlay-contents-bottom{
+    width: 100%;
+}
+
+.sec-login-overlay-contents-bottom form{
+    width: 100%;
+}
+
+
+.sec-login-contents-bottom-submit-btn{
+    width: 100%;
+    background-color: #312FA7;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.sec-login-contents-bottom-link{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* -- Section 1 -- */
@@ -257,7 +379,6 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 .statistik-content-left{
     margin: 0;
@@ -289,11 +410,22 @@ h1{
 }
 
 .about-website-card{
+    display: flex;
     margin: 0;
     padding: 30px;
     background-color: #F29D38;
     color: white;
 }
+
+.about-website-card-wrapper{
+    margin: 0;
+    width: 100%;
+}
+.about-website-card-text-desc{
+    width: 100%;
+    display: flex;
+}
+
 
 /* -- Section 3 -- */
 
@@ -308,7 +440,7 @@ h1{
     content: '';
     position: absolute;
     width: 100%;
-    height: 60%;
+    height: 100%;
     background-image: url('/assets/images/pelabuhan.jpg');
     background-size: cover;
     background-position: center;

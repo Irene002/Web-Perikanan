@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+*{
+    font-family: 'Inter', 'sans-serif';
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+.login-overlay{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, #EEF2FF, #CBE5F8);
+}
+
+.login-container{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    height: 45%;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.login-image-frame{
+    display: flex;
+    height: 100%;
+    width: 35%;
+    
+}
+
+.login-image-frame img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px 0px 0px 5px ;
+}
+
+.login-box{
+    background-color: whitesmoke;
+    width: 25%;
+    height: 100%;
+    border-radius: 0px 5px 5px 0px ;
+}
+
+.login-box-contents{
+    margin: 0;
+    padding: 1rem 2rem 0rem 2rem;
+}
+
+.login-box-header{
+    text-align: center;
+}
+
+.login-box-header-logo{
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+.login-box-header-logo img{
+    width: 100%;
+    height: auto;
+}
+
+.login-box-separator{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.login-box-separator p {
+    width: 60%;
+    text-align: center;
+}
+
+.login-box-separator-line{
+    height: 1px;
+    width: 30%;
+    background-color: grey;
+}
+
+.login-box-form{
+    margin: 0;
+}
+
+.login-box-form a {
+    text-decoration: none;
+}
+
+.login-box-form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box-form-group span{
+    margin-bottom: 1rem;
+}
+
+.login-box-form-group input{
+    margin-bottom: 1rem;
+    background: none;
+    border: none;
+    border-bottom: solid 1px black;
+    padding: 1rem 0;
+}
+
+.login-box-form-group input:focus{
+    outline: none;
+    border-bottom: solid 1px #312FA7;
+}
+
+.login-box-form button{
+    background-color: #312FA7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 1rem 0;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 1rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.login-box-form button:hover{
+    background-color: #28277f;
+
+}
+
+.login-box-link-wrapper{
+    text-align: end;
+}
+
+.login-box-link-wrapper a:hover{
+    color: #312FA7;
+
+}
+
+

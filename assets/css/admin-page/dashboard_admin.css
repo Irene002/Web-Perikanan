@@ -71,12 +71,14 @@ h1{
 
 
 .logo{
-    margin-right: 0;
+    display: flex;
+    height: 50px;
+    width: 50px;
 }
 
 .logo img{
-    height: 50px;
-    width: 50px;
+    height: auto;
+    width: 100%;
     padding: 0;
 }
 
@@ -109,30 +111,35 @@ h1{
     color: white;
     position: fixed;
     height: 100%;
-    margin-top: 5.7rem;
+    margin-top: 5.6rem;
     display: flex;
     flex-direction: column;
 }
 
-.sidebar-link-container{
-    padding: 0 2rem;
-}
-
-.sidebar-link-container li{
-    margin-bottom: 2rem;
+li{
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
-.sidebar-link-container li a {
+li a {
     color:white;
     text-decoration: none;
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 1rem 3rem;
+    width: 100%;
 }
 
-.sidebar-link-container li a i {
+ li a i {
     margin-right: 10px;
+}
+
+.sidebar-link-active{
+    background-color: #6665cf;
+    border-left: solid 10px #4240d1;
 }
 
 .content-right{
@@ -226,18 +233,24 @@ color: rgb(177, 71, 71);
     background-color: white;
     margin-bottom: 2rem;
 }
+
+/* -- User Settings Card -- */
+
 .card-user-settings{
     border-top: solid 1rem #312FA7;
     border-radius: 1rem;
     width: 100%;
     background-color: white;
     margin-bottom: 2rem;
+    padding: 1rem 0;
 }
+
 .card-stats{
     border-top: solid 1rem #312FA7;
     border-radius: 1rem;
     background-color: white;
     width: 100%;
+    padding: 1rem 0;
 }
 
 .card-pelabuhan{
@@ -246,6 +259,7 @@ color: rgb(177, 71, 71);
     width: 60%;
     background-color: white;
     margin-right: 1rem;
+    padding: 1rem 0;
 }
 
 .card-calendar{
@@ -262,10 +276,35 @@ color: rgb(177, 71, 71);
 
 .card-contents h2{
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
 .card-contents p{
     margin-bottom: 1rem;
+}
+
+/* -- Card Button --*/
+
+.card-button{
+    text-align: end;
+}
+
+/* -- Card Content Button -- */
+.card-button a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: #312FA7;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card-button a:hover{
+    background-color: #2b2988;
 }
 
 
@@ -289,20 +328,6 @@ color: rgb(177, 71, 71);
     padding: 10px;
 }
 
-/* -- Card-Button -- */
-.card-button-wrapper{
-    text-align: end;
-}
-
-.card-button{
-    color: white;
-    padding: 10px;
-    font-size: 14px;
-    background-color: #312FA7;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
 /* -- Card-Image -- */
 .card-pelabuhan-frame{
     display: flex;
@@ -317,6 +342,8 @@ color: rgb(177, 71, 71);
 }
 
 /* -- Styles for mobile devices -- */
+
+/* -- Mobile Phones -- */
 
 @media (max-width: 599px) {
 
@@ -427,13 +454,12 @@ color: rgb(177, 71, 71);
     
     .navigation-bottom li{
         list-style: none;
+        padding: 0;
     }
     
     .navigation-bottom li a{
         color: white;
         text-decoration: none;
-        margin-right: 2rem;
-        font-size: 12px;
     }
     
     .navigation-bottom-link{
@@ -441,6 +467,8 @@ color: rgb(177, 71, 71);
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        padding: .5rem .5rem;
+        font-size: 12px;
     }
     
     .navigation-bottom-link-active{
@@ -449,9 +477,15 @@ color: rgb(177, 71, 71);
         align-items: center;
         gap: 10px;
         background-color: #6665cf;
-        padding: 1rem 1rem;
+        padding: .5rem .5rem;
+        font-size: 12px;
     }
-
+    
+    .navigation-bottom-link i, .navigation-bottom-link-active i {
+        font-size: 30px;
+        margin:0;
+    }
+    
     .navigation-bottom-account{
         height: 60px;
         width: 60px;
@@ -464,10 +498,6 @@ color: rgb(177, 71, 71);
         height: auto;
         width: 100%;
         border-radius: 50rem;
-    }
-    
-    .navigation-bottom-link i, .navigation-bottom-link-active i {
-        font-size: 30px;
     }
     
     /* -- Contents -- */
@@ -570,7 +600,7 @@ color: rgb(177, 71, 71);
     
     .sidebar-account-footer-image{
         width: 50px;
-        height: 50px;
+        height: 50%;
         display: flex;
         border-radius: 90rem;
     }
@@ -634,13 +664,39 @@ color: rgb(177, 71, 71);
     }
     
     .card-contents h2{
+        font-size: 20px;
         margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .card-contents h2 i{
+        width: 5%;
     }
     
     .card-contents p{
         margin-bottom: 1rem;
     }
-    
+
+    /* -- Card Button --*/
+
+.card-button{
+    text-align: end;
+}
+
+/* -- Card Content Button -- */
+.card-button a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: #312FA7;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
     
     .card-container{
         display: block;
@@ -661,21 +717,7 @@ color: rgb(177, 71, 71);
         margin: 0;
         padding: 10px;
     }
-    
-    /* -- Card-Button -- */
-    .card-button-wrapper{
-        text-align: end;
-    }
-    
-    .card-button{
-        color: white;
-        padding: 10px;
-        font-size: 14px;
-        background-color: #312FA7;
-        font-weight: bold;
-        border-radius: 5px;
-    }
-    
+
     /* -- Card-Image -- */
     .card-pelabuhan-frame{
         display: flex;
@@ -690,8 +732,6 @@ color: rgb(177, 71, 71);
     }
 
 }
-
-/* -- Mobile Phones -- */
 
 /* -- Tablets -- */
 
@@ -796,19 +836,18 @@ h1{
 .navigation-bottom ul{
     display: flex;
     flex-direction: row;
-    padding: 0 1rem;
     justify-content: center;
     align-items: center;
 }
 
 .navigation-bottom li{
     list-style: none;
+    padding: 0;
 }
 
 .navigation-bottom li a{
     color: white;
     text-decoration: none;
-    margin-right: 2rem;
 }
 
 .navigation-bottom-link{
@@ -816,6 +855,8 @@ h1{
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    padding: 1rem 1rem;
+    font-size: 12px;
 }
 
 .navigation-bottom-link-active{
@@ -825,24 +866,26 @@ h1{
     gap: 10px;
     background-color: #6665cf;
     padding: 1rem 1rem;
+    font-size: 12px;
 }
 
 .navigation-bottom-link i, .navigation-bottom-link-active i {
     font-size: 30px;
+    margin:0;
 }
 
 .navigation-bottom-account{
     height: 60px;
-    width: 60px;
+    width: 50%;
     display: flex;
-    border-radius: 50rem;
+    border-radius: 100rem;
     border: solid 1px white;
 }
 
 .navigation-bottom-account img{
     height: auto;
     width: 100%;
-    border-radius: 50rem;
+    border-radius: 100rem;
 }
 
 /* -- Contents -- */
@@ -1009,11 +1052,32 @@ color: rgb(177, 71, 71);
 }
 
 .card-contents h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 1rem;
 }
 
 .card-contents p{
     margin-bottom: 1rem;
+}
+
+/* -- Card Button --*/
+
+.card-button{
+    text-align: end;
+}
+
+/* -- Card Content Button -- */
+.card-button a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: #312FA7;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 
@@ -1037,20 +1101,6 @@ color: rgb(177, 71, 71);
     padding: 10px;
 }
 
-/* -- Card-Button -- */
-.card-button-wrapper{
-    text-align: end;
-}
-
-.card-button{
-    color: white;
-    padding: 10px;
-    font-size: 14px;
-    background-color: #312FA7;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
 /* -- Card-Image -- */
 .card-pelabuhan-frame{
     display: flex;
@@ -1068,7 +1118,7 @@ color: rgb(177, 71, 71);
 
 /* -- Desktop -- */
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 1694px) {
 
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 *{
@@ -1383,11 +1433,32 @@ color: rgb(177, 71, 71);
 }
 
 .card-contents h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 1rem;
 }
 
 .card-contents p{
     margin-bottom: 1rem;
+}
+
+/* -- Card Button --*/
+
+.card-button{
+    text-align: end;
+}
+
+/* -- Card Content Button -- */
+.card-button a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: #312FA7;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 
@@ -1411,20 +1482,6 @@ color: rgb(177, 71, 71);
     padding: 10px;
 }
 
-/* -- Card-Button -- */
-.card-button-wrapper{
-    text-align: end;
-}
-
-.card-button{
-    color: white;
-    padding: 10px;
-    font-size: 14px;
-    background-color: #312FA7;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
 /* -- Card-Image -- */
 .card-pelabuhan-frame{
     display: flex;
@@ -1439,3 +1496,4 @@ color: rgb(177, 71, 71);
 }
 
 }
+

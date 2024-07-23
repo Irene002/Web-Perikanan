@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pusat Informasi Pelabuhan Perikanan Nusa Utara</title>
-    <link rel="stylesheet" href="/assets/css/admin/dashboard_admin.css">
+    <link rel="stylesheet" href="/assets/css/admin-page/dashboard_admin.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
@@ -33,14 +33,14 @@
         <p>Testing Website</p>
     </div>
     </div>
-    <ul class="sidebar-link-container">
-        <li class="sidebar-link-active"><a href="#"><i class="material-icons">computer</i>Beranda</a></li>
+    <ul>
+        <li ><a class="sidebar-link-active" href="#"><i class="material-icons">computer</i>Beranda</a></li>
         <li><a href="#"><i class="material-icons">mail</i> Pesan</a></li>
         <li><a href="#"><i class="material-icons">query_stats</i> Statistik</a></li>
         <li><a href="#"><i class="material-icons">anchor</i> Pelabuhan</a></li>
         <li><a href="#"><i class="material-icons">settings</i> Pengaturan</a></li>
-        <li><a href="#"><i class="material-icons">person</i> Pengguna</a></li>
-        <li class="logout"><a href="#"><i class="material-icons">logout</i> Testing</a></li>
+        <li><a href="/back_end_pages/admin/pengguna/pengguna.html"><i class="material-icons">person</i> Pengguna</a></li>
+        <li class="logout"><a href="/main.html"><i class="material-icons">logout</i> Logout</a></li>
 
     </ul>
     <div class="sidebar-account-footer">
@@ -78,6 +78,9 @@
             <h2>Pengaturan Pengguna <i class="material-icons">group</i></h2>
             <hr>
             <p>Mengakses dan memodifikasi semua preferensi dan konfigurasi pengguan terdaftar.</p>
+            <div class="card-button">
+            <a href="#">Lihat Pengguna</a>
+            </div>
         </div>
         </div>
 
@@ -85,6 +88,9 @@
             <div class="card-contents">
             <h2>Statistik Ikan <i class="material-icons">phishing</i></h2>
             <p>Akses dan memodifikasi database statistik perikanan.</p>
+            <div class="card-button">
+                <a href="#">Lihat Statistik</a>
+                </div>
         </div>
         </div>
     </div>
@@ -96,10 +102,8 @@
             <div class="card-pelabuhan-frame">
             <iframe src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=5&overlay=wind&product=ecmwf&level=surface&lat=-2.46&lon=124.849&detailLat=1.481&detailLon=124.85199999999998&marker=true&message=true" frameborder="0"></iframe>
         </div>
-            <div class="card-button-wrapper">
-                <a class="card-button" href="#">Lihat Pelabuhan
-                </a>
-                
+        <div class="card-button">
+            <a href="#">Lihat Pengguna</a>
             </div>
         </div>
         </div>
@@ -125,9 +129,6 @@
         <li><a class="navigation-bottom-link" href="#"><i class="material-icons">query_stats</i><p>Statistik</p></a></li>
         <li><a class="navigation-bottom-link" href="#"><i class="material-icons">anchor</i><p>Pelabuhan</p></a></li>
         <li><a class="navigation-bottom-link" href="#"><i class="material-icons">more</i><p>Lainnya</p></a></li>
-        <div class="navigation-bottom-account">
-            <img src="/assets/images/pelabuhan.jpg">
-        </div>
     </ul>
 </nav>
     

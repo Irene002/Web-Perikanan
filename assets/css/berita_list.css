@@ -40,7 +40,7 @@
 }
 
 .navbar li a{
-    font-size: 14px;
+    font-size: 1rem;
     color: white;
     text-decoration: none;
 }
@@ -51,7 +51,7 @@
 }
 
 .navbar-active-link{
-    font-size: 14px;
+    font-size: 1rem;
     color: #F29D38 !important;
     text-decoration: underline !important;
 }

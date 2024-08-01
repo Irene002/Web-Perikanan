@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Informasi Pelabuhan Perikanan Nusa Utara</title>
+    <link rel="stylesheet" href="/assets/css/admin-page/pengaturan/pengaturan.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+        <!-- Navbar -->
+<nav class="navbar">
+    <ul>
+        <div class="logo">
+            <img src="/assets/images/Logo/Logo.png">
+        </div>
+    </div>
+        <p> Pusat Informasi Pelabuhan Perikanan Nusa Utara</p>
+        <div class="right-nav">
+            <p>DASHBOARD</p>
+        </div>
+    </ul>
+</nav>
+
+<nav class="sidebar">
+    <div class="sidebar-header">
+        <div class="sidebar-header-logo">
+            <img src="/assets/images/Logo/Logo.png" alt="logo">
+        </div>
+        <div class="sidebar-header-text">
+        <h3>Website PPN</h3>
+        <p>Testing Website</p>
+    </div>
+    </div>
+    <ul>
+        <li ><a href="/back_end_pages/admin/dashboard_main.html"><i class="material-icons">computer</i>Beranda</a></li>
+        <li><a href="#"><i class="material-icons">mail</i> Pesan</a></li>
+        <li><a href="#"><i class="material-icons">query_stats</i> Statistik</a></li>
+        <li><a href="#"><i class="material-icons">anchor</i> Pelabuhan</a></li>
+        <li><a class="sidebar-link-active" href="#"><i class="material-icons">settings</i> Pengaturan</a></li>
+        <li><a href="/back_end_pages/admin/pengguna/pengguna.html"><i class="material-icons">person</i> Pengguna</a></li>
+        <li class="logout"><a href="/main.html"><i class="material-icons">logout</i> Keluar</a></li>
+
+    </ul>
+    <div class="sidebar-account-footer">
+        <div class="sidebar-account-footer-image">
+            <img src="/assets/images/pelabuhan.jpg">
+        </div>
+<div class="sidebar-account-footer-text">
+        <h3>Irene002</h3>
+        <p>Admin</p>
+    </div>
+
+    </div>
+</nav>
+
+<section class="contents">
+    <div class="search-container">
+        <i class="material-icons">search</i>
+    <input type="search" name="search" placeholder="Cari">
+</div>
+    <div class="card-container">
+        <div class="card-pengaturan">
+                <h2>Pengaturan Lanjutan</h2>
+                <hr>
+                <div class="card-pengaturan-options">
+                    <h3>Pengaturan Izin</h3>
+                    <div class="card-pengaturan-options-button-wrapper">
+                        <p>Bagian ini untuk mengonfigurasi izin tingkat lanjut untuk peran atau role pengguna.</p>
+                        <a class="card-pengaturan-options-btn" href="#"> Selanjutnya </a>
+                    </div>
+                </div>
+
+                <div class="card-pengaturan-options">
+                    <h3>Cadangan</h3>
+                    <div class="card-pengaturan-options-button-wrapper">
+                        <p>Bagian ini untuk mengonfigurasi izin tingkat lanjut untuk peran atau role pengguna.</p>
+                        <a class="card-pengaturan-options-btn" href="#"> Selanjutnya </a>
+                    </div>
+                </div>
+        </div>
+
+        <div class="card-pengaturan">
+            <h2>Pengaturan Umum</h2>
+            <hr>
+            <div class="card-pengaturan-options">
+                <h3>Bahasa</h3>
+                <div class="card-pengaturan-options-button-wrapper">
+                    <p>Atur bahasa pilihan Anda. Perhatikan bahwa website ini belum diterjemahkan ke bahasa lain, ini hanya akan diterjemahkan berdasarkan pengaturan default.</p>
+                    <div class="card-pengaturan-options-btn-container">
+                    <div class="card-pengaturan-options-btn-overlay">
+                        <li> Inggris</li>
+                        <li> Indonesia</li>
+                    </div>
+                    <div class="card-pengaturan-options-btn">Bahasa Indonesia</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="card-pengaturan-options">
+                <h3>Tanggal Dan Waktu</h3>
+                <div class="card-pengaturan-options-button-wrapper">
+                    <p>Bagian ini adalah tempat mengubah waktu untuk situs web ini.</p>
+                    <div id="datetime"></div>
+                </div>
+            </div>
+
+            <div class="card-pengaturan-options">
+                <h3>Pengaturan Izin</h3>
+                <div class="card-pengaturan-options-button-wrapper">
+                    <p>Bagian ini untuk mengonfigurasi izin tingkat lanjut untuk peran atau role pengguna.</p>
+                    <a class="card-pengaturan-options-btn" href="#"> Selanjutnya </a>
+                </div>
+            </div>
+            
+    </div>
+
+
+    </div>
+
+</section>
+
+<nav class="navigation-bottom"> 
+    <ul>
+        <li><a class="navigation-bottom-link-active" href="#"><i class="material-icons">computer</i><p>Beranda</p></a></li>
+        <li><a class="navigation-bottom-link" href="#"><i class="material-icons">mail</i><p>Pesan</p></a></li>
+        <li><a class="navigation-bottom-link" href="#"><i class="material-icons">query_stats</i><p>Statistik</p></a></li>
+        <li><a class="navigation-bottom-link" href="#"><i class="material-icons">anchor</i><p>Pelabuhan</p></a></li>
+        <li><a class="navigation-bottom-link" href="#"><i class="material-icons">more</i><p>Lainnya</p></a></li>
+    </ul>
+</nav>
+
+<script src="/assets/js/date_time.js"></script>
+    
+</body>
+</html>

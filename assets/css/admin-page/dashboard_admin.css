@@ -7,20 +7,17 @@
     
 }
 
-body{
+body, html{
     font-family: 'Inter', sans-serif;
     padding: 0;
     justify-content: center;
     align-items: center;
     height: 100%;
-    overflow: hidden;
-
-}
-
-html{
-    overflow: hidden;
-    height: 100% !important;
     width: 100%;
+    background: linear-gradient(to bottom, #EEF2FF, #CBE5F8);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
 }
 
 h1{
@@ -164,14 +161,12 @@ h1{
 
 /* -- Contents -- */
 .contents{
-    margin:0;
-    padding: 8rem 0;
+    margin-left: 0;
+    padding-top: 9rem;
     padding-left: 20rem;
-    padding-right: 4rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
     height: 100%;
-    background: linear-gradient(to bottom, #EEF2FF, #CBE5F8);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 /* -- Sidebar -- */
@@ -212,21 +207,15 @@ li a {
     border-left: solid 10px #4240d1;
 }
 
-.content-right{
-    width: 100%;
-    padding: 0;
-    height: 100%;
-}
-
-.content-right h1{
+.contents h1{
     font-size: 2.5rem;
 }
 
-.content-right h3{
+.contents h3{
     font-size: 1.25rem;
 }
 
-.content-right-header{
+.content-header{
     margin-bottom: 2rem;
 }
 
@@ -423,4 +412,39 @@ color: rgb(177, 71, 71);
 .card-pelabuhan-frame iframe{
     width: 100%;
     height: auto;
+}
+
+@media (max-width: 1366px){
+    body,html{
+        background-size: cover;
+        overflow: auto;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-wrapper{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .card-pelabuhan{
+        margin-bottom: 2rem;
+    }
+
+    .card-calendar{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1920px){
+    
+    body,html {
+        overflow: auto;
+    }
+
+    .contents{
+        padding-bottom: 3rem;
+    }
 }

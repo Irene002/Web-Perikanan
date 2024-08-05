@@ -9,8 +9,6 @@ body, html{
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    justify-content: center;
-    align-items: center;
     background: linear-gradient(to bottom, #EEF2FF, #CBE5F8);
     background-size: cover;
     background-repeat: no-repeat;
@@ -130,15 +128,6 @@ h1{
     flex-direction: column;
     background-color: #6665cf;
     padding: 1rem .8rem;
-}
-
-
-/* -- Contents -- */
-.contents{
-    margin-left: 20rem;
-    margin-right: 5rem;
-    padding-top: 10rem;
-    padding-bottom: 4rem;
 }
 
 /* -- Sidebar -- */
@@ -311,260 +300,74 @@ color: rgb(177, 71, 71);
     border-radius: 90rem;
 }
 
-/* -- Card Table -- */
-
-.table-card-container{
-    background-color: white;
-    border-top: solid 1rem #312FA7;
-    border-radius: 1rem;
+/* -- Contents -- */
+.contents{
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    margin-left: 20rem;
+    margin-right: 2rem;
+    overflow: hidden;
 }
 
-.table-container{
-    overflow-x: scroll;
-}
-
-.table-card-contents{
-    padding: 1rem;
-}
-
-.table-card-top{
-    border-bottom: solid 1px black;
-    padding-bottom: 1rem;
-}
-
-.table-card-top-header{
+.contents h1{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: .5rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
 }
 
-.table-card-top-items{
+.contents h1 i{
+    font-size: 2rem;
+}
+
+.card-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    overflow: clip;
+    gap: 2rem;
 }
 
-.table-card-top-items form{
-    width: 30%;
-}
-
-/* -- Card Table Search -- */
-
-
-.table-card-top-search-wrapper{
-    display: flex;
+.card-container{
+    background-color: white;
+    border-top: solid 1rem #312FA7;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
     width: 100%;
 }
 
-.table-card-top-search-container{
-    border: solid 1px black;
-    display: flex;
-    width: 100%;
-    padding: 5px 10px;
-    align-items: center;
-    border-radius: 5px;
-}
-
-.table-card-top-search-container input{
-    background: none;
-    border: none;
-    width: auto;
-    width: 100%;
-}
-
-.table-card-top-search-container button{
-    cursor: pointer;
-}
-
-.table-card-top-search-container input[type='search'] ::-webkit-search-cancel-button {
-    -webkit-appearance: none;
-    appearance: none;
-}
-
-.table-card-top-search-container input[type='search'] ::-ms-clear {
-    display: none;
-    width: 0;
-    height: 0;
-}
-
-.table-card-top-search-container input[type='search']{
-    appearance: textfield;
-    -moz-appearance: textfield;
-}
-
-.table-card-top-search-container input[type='search']::-webkit-search-decoration, ::-webkit-search-results-decoration{
-    display: none;
-}
-
-
-.table-card-top-search-container input:focus{
-   outline: none;
-}
-
-.table-card-top-search-container button{
-    background: none;
-    border: none;
-}
-
-/* -- Card Table Buttons -- */
-.table-card-top-items-buttons{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-
-.table-card-top-items-add-btn{
-    background-color: green;
+.card-header-wrapper{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
-    color: white;
-    border-radius: 5px;
-    padding: 0 1rem;
-
+    justify-content: space-between;
 }
 
-.table-card-top-items-option-btn{
-    background-color: #312FA7;
+.card-header-wrapper a{
+    text-decoration: none;
+    margin: 0 2rem;
+    color: gray;
+}
+
+.card-container h3{
+    padding: 1rem;
+}
+
+.card-frame-container{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    border-radius: 5px;
-    padding: 0 1rem;
-
-}
-
-
-
-
-/* -- Table Contents -- */
-table{
     width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    text-align: left;
-}
-
-th, td{
-    padding: 12px;
-    border: 1px solid black;
-}
-
-th{
-    color: white;
-    background-color: #312FA7;
-}
-
-
-
-
-
-
-/* -- Styles for mobile devices -- */
-
-/* -- Mobile Phones -- */
-
-@media (max-width:599px) {
-    .navbar ul p{
-        font-size: .5rem;
-
-    }
-
-    .right-nav p{
-        font-size: .6rem !important;
-    }
-
-    .navbar .logo{
-        width: 40px;
-        height: 40px;
-    }
-
-    .sidebar{
-        display: none;
-    }
-
-    .contents{
-        margin: 0;
-        padding: 8rem 0;
-    }
-
-    .table-card-container{
-        border-radius: 0;
-       padding: 0;
-    }
-
-    .table-container{
-        overflow-x: scroll;
-        overflow-y: hidden;
-    }
-
-    .navigation-bottom{
-        display: flex;
-    }
-
-    .table-card-top-items{
-        justify-content: space-between;
-        gap: 0;
-    }
-
-    .table-card-top-items form{
-        width: 50%;
-    }
-
-    .table-card-top-items-add-btn{
-        gap: 5px;
-    }
-
-    .table-card-top-items-option-btn{
-        display: none;
-    }
-
-    .table-card-top-search-wrapper{
-        width: 100%;
-    }
-
-    .table-card-top-search-container{
-        width: 100%;
-    }
-
-    .table-card-top-search-container input{
-        width: 100%;
-    }
+    height: 500px;
     
 }
 
-@media (max-width: 768px){
-    .navigation-bottom{
-        display: block;
-    }
-    .sidebar{
-        display: none;
-    }
-    .contents{
-        margin: 0;
-        padding: 8rem 0;
-    }
-
-    .table-card-top-items form{
-        width: 50%;
-    }
-
-    .table-card-container{
-        border-radius: 0;
-    }
-    
+.card-frame{
+    width: 100%;
+    margin: 1rem 1rem;
+    background-color: #312FA7;
 }
 
-@media (max-width: 1024px){
-
-    .table-card-top-items form{
-        width: 50%;
-    }
-
+.card-frame iframe{
+    width: 100%;
+    height: 100%;
 }

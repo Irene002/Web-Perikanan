@@ -36,7 +36,7 @@
         <li ><a href="/back_end_pages/admin/dashboard_main.html"><i class="material-icons">computer</i>Beranda</a></li>
         <li><a href="#"><i class="material-icons">mail</i> Pesan</a></li>
         <li><a class="sidebar-link-active"  href="#"><i class="material-icons">query_stats</i> Statistik</a></li>
-        <li><a href="#"><i class="material-icons">anchor</i> Pelabuhan</a></li>
+        <li><a href="/back_end_pages/admin/pelabuhan/pelabuhan.html"><i class="material-icons">anchor</i> Pelabuhan</a></li>
         <li><a href="/back_end_pages/admin/pengaturan/pengaturan.html"><i class="material-icons">settings</i> Pengaturan</a></li>
         <li><a href="/back_end_pages/admin/pengguna/pengguna.html"><i class="material-icons">person</i> Pengguna</a></li>
         <li class="logout"><a href="/main.html"><i class="material-icons">logout</i> Keluar</a></li>
@@ -60,36 +60,166 @@
     <h1>Statistik</h1>
 </div>
 
-    <div class="card-wrapper-row">
-        <div class="card-container row">
+<div class="card">
+
+    <div class="card-wrapper-row one">
+        <div class="card-container sub">
+            <div class="card-contents">
+                <div class="card-header">
+                <h3>testing</h3> <i class="material-icons">information</i>
+            </div>
+            <h3>Hello World</h3>
+            </div>
+
+        </div>
+        <div class="card-container sub">
+            <div class="card-contents">
+                <div class="card-header">
+                <h3>testing</h3> <i class="material-icons">information</i>
+            </div>
+            <h3>Hello World</h3>
+            </div>
+
+        </div>
+        <div class="card-container sub">
+            <div class="card-contents">
+                <div class="card-header">
+                <h3>testing</h3> <i class="material-icons">information</i>
+            </div>
+            <h3>Hello World</h3>
+            </div>
+
+        </div>
+        <div class="card-container sub">
+            <div class="card-contents">
+                <div class="card-header">
+                <h3>testing</h3> <i class="material-icons">information</i>
+            </div>
+            <h3>Hello World</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card-wrapper-row two">
+        <div class="card-container main">
             <h2>Tangkapan Total</h2>
             <hr>
             <p>Menampilkan total volume ikan yang ditangkap dalam periode yang ditentukan.</p>
             <a href="#">Lihat Selengkapnya</a>
         </div>
 
-        <div class="card-container row">
+        <div class="card-container main">
             <h2>Tangkapan Spesies</h2>
             <hr>
             <p>Menyajikan spesies ikan utama yang ditangkap.</p>
             <a href="#">Lihat Selengkapnya</a>
         </div>
     </div>
-    <div class="card-container">
-        <h2>Pendapatan dari Penjualan</h2>
+    <div class="card-container main">
+        <h2>Harga Rata - Rata Ikan Yang Didaratkan</h2>
         <hr>
-        <p>Testing aldjaldjfl;kajfk;lasdjf;klajfl;kajsf;lksajfkl;ad</p>
+        <div class="card-contents">
+            <div class="card-content-top-wrapper">
+            <div class="card-filter-wrapper">
+                <div class="card-filter active">
+                    <p>Harian</p>
+                </div>
+                <div class="card-filter">
+                    <p>Mingguan</p>
+                </div>
+                <div class="card-filter">
+                    <p>Bulanan</p>
+                </div>
+            </div>
+
+            <form method="post">
+                <input type="text" name="search" placeholder="Nama Jenis Ikan">
+                <button type="submit"><i class="material-icons">search</i></button>
+            </form>
+        </div>
+
+        <div class="card-table-container">
+            <table>
+                <tr>
+                    <th>Nama Jenis Ikan</th>
+                    <th>Nama Latin</th>
+                    <th>Harga Rata Rata (Rp./Kg)</th>
+                </tr>
+                <tr>
+                    <td>Testing</td>
+                    <td>Testing</td>
+                    <td>Testing</td>
+                </tr>
+                <tr>
+                    <td>Testing</td>
+                    <td>Testing</td>
+                    <td>Testing</td>
+                </tr>
+                <tr>
+                    <td>Testing</td>
+                    <td>Testing</td>
+                    <td>Testing</td>
+                </tr>
+                <tr>
+                    <td>Testing</td>
+                    <td>Testing</td>
+                    <td>Testing</td>
+                </tr>
+                <tr>
+                    <td>Testing</td>
+                    <td>Testing</td>
+                    <td>Testing</td>
+                </tr>
+                <tr>
+                    <td>Testing</td>
+                    <td>Testing</td>
+                    <td>Testing</td>
+                </tr>
+                <tr>
+                    <td>Testing</td>
+                    <td>Testing</td>
+                    <td>Testing</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card-table-content-bottom">
+            <p>Showing 1 out 200 entries</p>
+            <div class="card-table-page-nav-wrapper">
+                <button type="button"><i class="material-icons">chevron_left</i></button>
+                <a class="active-nav" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <button type="button"><i class="material-icons">chevron_right</i></button>
+            </div>
+        </div>
+
+
+        </div>
     </div>
-    <div class="card-container">
+    <div class="card-container main">
         <h2>Status Stok Ikan</h2>
         <hr>
-        <p>Testing aldjaldjfl;kajfk;lasdjf;klajfl;kajsf;lksajfkl;ad</p>
+        <div class="card-stock-label-container">
+            <div class="card-stock-label">
+                <div class="card-stock-label-color"></div>
+        <p>Label Stock 1%</p>
+    </div>
+            <div class="card-stock-label">
+        <div class="card-stock-label-color"></div>
+<p>Label Stock 1%</p>
+        </div>
+    </div>
         <div class="card-content-frame-container">
             <div class="card-content-frame">Contoh Gambar Grafik</div>
         </div>
     </div>
 
-    <div class="card-container">
+    <div class="card-container main">
         <h2>Impor & Expor Ikan</h2>
         <hr>
         <p>Testing aldjaldjfl;kajfk;lasdjf;klajfl;kajsf;lksajfkl;ad</p>
@@ -97,6 +227,7 @@
             <div class="card-content-frame">Contoh Gambar Grafik</div>
         </div>
     </div>
+</div>
 </section>
 
     

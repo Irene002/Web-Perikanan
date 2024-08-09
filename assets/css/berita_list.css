@@ -366,5 +366,18 @@ footer p {
 
 }
 
+@media (max-width:1366px){
+    .news-wrapper{
+        width: 70% !important;
+    }
+}
+
+@media (max-width:1920px){
+    .news-wrapper{
+        width: 50%;
+    }
+}
+
+
 
 

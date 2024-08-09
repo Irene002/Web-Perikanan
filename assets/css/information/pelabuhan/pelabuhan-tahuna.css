@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+*{
+    font-family: 'Inter', 'sans-serif';
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    overflow-x: hidden;
+}
+
+/* -- Navigation Bar -- */
+
+.navbar{
+    background-color: #312FA7;
+    display: block;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    position:fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar li{
+    list-style-type: none;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 70px;
+    gap: 2.5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar li a{
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-active-link{
+    color: #F29D38;
+    text-decoration: underline;
+}
+
+.navbar-active-link{
+    font-size: 1rem;
+    color: #F29D38 !important;
+    text-decoration: underline !important;
+}
+
+
+.logo{
+    margin-right: 0;
+}
+
+.logo img{
+    height: 50x;
+    width: 50px;
+    padding: 0;
+}
+
+.right-nav{
+    margin-left: auto;
+}
+
+.right-nav i{
+    font-size: 30px;
+    color: white;
+}
+
+
+/* -- Contents -- */
+
+.contents{
+    margin-top: 5.8rem;
+}
+
+.contents-banner-top{
+    display: flex;
+    height: 500px;
+}
+
+.contents-banner-top img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+
+/* -- Information Section -- */
+
+.info-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-sec-contents{
+    width: 50%;
+    padding: 5rem 0;
+}
+
+.info-ec-contents hr{
+    margin-top: 2rem;
+}
+.info-sec-contents-header h2{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.info-sec-contents hr{
+    border-color: #e2e2f9;
+
+}
+
+.contents-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: justify;
+    line-height: 2;
+}
+
+.contents-info-wrapper{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-sec-separator{
+    margin-top: 2rem;
+}
+
+
+/* -- Information Section Images -- */
+
+.contents-info-map-wrapper{
+    margin: 2rem 5rem;
+}
+
+.contents-info-map{
+    display: flex;
+    overflow: clip;
+    border: solid 1px gray;
+}
+
+.contents-info-map img{
+    scale: 1.4;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* -- Footer -- */
+
+.footer{
+    background-color: #74716d;
+}
+
+.footer-bottom {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: #312FA7;
+}
+
+.footer-contents{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content.left{
+    margin: 0;
+}
+
+.footer-content-left-btn{
+    margin: 0;
+    display: flex;
+    background-color: #e9860e;
+    width: fit-content;
+    border-radius: 5px;
+}
+.footer-content-left-btn a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.footer-content.left p{
+    padding: 1rem;
+}
+
+.footer-content.left p{
+    margin-bottom: 1rem;
+}
+
+.footer-content-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-content-header-logo{
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+}
+
+.footer-content-header-logo img{
+    width: 100%;
+    height: auto;
+}
+
+
+.footer-content.right{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    width: 30%;
+}
+
+.footer-content-nav ul li{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.footer-content-nav{
+    color: white;
+}
+
+.footer-content-nav ul{
+    margin-top: 2rem;
+}
+
+.footer-content-subscription{
+    margin: 0;
+    color: white;
+}
+
+.footer-content-subscription form input,button{
+    background: none;
+    border: none;
+    width: fit-content;
+}
+
+.footer-content-subscription form input{
+    width: 100%;
+}
+
+.footer-content-subscription form input:focus{
+    outline: 0;
+}
+
+.footer-content-subscription form{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 1rem;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.footer-content-subscription button{
+    background-color: #e9860e;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.footer-content-subscription button i{
+    transform: rotate(-40deg);
+    font-size: 1.5rem;
+}
+
+@media (max-width:1366px){
+
+    .info-sec-contents{
+        width: 80%;
+        padding: 5rem 0;
+    }
+}

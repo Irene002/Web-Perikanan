@@ -16,7 +16,7 @@
             <img src="assets/images/Logo/Logo.png">
         </div>
     </div>
-        <li><a href="#">Beranda</a></li>
+        <li><a href="/main.html">Beranda</a></li>
         <li><a href="berita_list.html">Berita</a></li>
         <li><a class="navbar-active-link" href="#">Statistik</a></li>
         <div class="right-nav">
@@ -31,14 +31,30 @@
         <h1>Testing</h1>
     </div>
     <div class="contents-wrapper">
+        <div class="wrapper-card-row">
         <div class="card-container">
             <div class="card-contents">
-                <h2>Harga Rata - Rata Ikan Yang Didaratkan</h2>
+                <div class="card-contents-header">
+                <h3>Harga Rata - Rata Ikan Yang Didaratkan</h3>
+            </div>
                 <hr>
                 <div class="card-content-top-wrapper">
+                    <div class="card-top-filter-container">
+                    <div class="card-top-filter-btn active">
                     <a href="#">Harian</a>
+                </div>
+                <div class="card-top-filter-btn">
                     <a href="#">Mingguan</a>
+                </div>
+                <div class="card-top-filter-btn">
                     <a href="#">Bulanan</a>
+                </div>
+            </div>
+
+                <form method="post">
+                    <input type="text" name="search" placeholder="Nama Jenis Ikan">
+                    <button type="submit"><i class="material-icons">search</i></button>
+                </form>
                 </div>
                 <div class="card-table-container">
                     <table>
@@ -89,9 +105,80 @@
                         </tr>
                     </table>
                 </div>
+            
+            <div class="card-contents-bottom">
+                <div class="card-contents-bottom-results-wrapper">
+                    <p>Showing 1 out of 200 results</p>
+                </div>
+                <div class="card-contents-bottom-nav-wrapper">
+                    <a href="#"><i class="material-icons">chevron_left</i></a>
+                    <div class="card-contents-bottom-nav-number-btn active">
+                    <a href="#">1</a>
+                </div>
+                <div class="card-contents-bottom-nav-number-btn">
+                    <a href="#">2</a>
+                </div>
+                <div class="card-contents-bottom-nav-number-btn">
+                    <a href="#">3</a>
+                </div>
+                <div class="card-contents-bottom-nav-number-btn">
+                    <a href="#">4</a>
+                </div>
+                    <a href="#"><i class="material-icons">chevron_right</i></a>
+                </div>
             </div>
         </div>
     </div>
+
+        <div class="card-container map">
+            <div class="card-contents map">
+                <div class="card-contents-header">
+                    <h2>Peta Cuaca</h2>
+                </div>
+                <hr>
+                <div class="card-content-frame">
+                    <div class="card-content-frame-map">
+                        <iframe src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=5&overlay=wind&product=ecmwf&level=surface&lat=-2.46&lon=124.849&detailLat=1.481&detailLon=124.85199999999998&marker=true&message=true" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+</div>
+
+
+<div class="wrapper-card-row mid">
+    <div class="card-container">
+        <div class="card-contents">
+            <div class="card-contents-header">
+                <h3>Peta Sebaran Pendaratan Ikan</h3>
+            </div>
+            <hr>
+            <div class="card-content-frame">
+                <div class="card-content-frame-map">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1hP98R_sxHVN4iDWAlh8pp-B3kNhVOhc&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card-container">
+        <div class="card-contents">
+            <div class="card-contents-header">
+                <h3>Aktivitas Kedatangan Kapal</h3>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
 </main>
 
 

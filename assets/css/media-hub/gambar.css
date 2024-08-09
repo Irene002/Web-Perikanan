@@ -233,6 +233,7 @@ body,html{
     height: 300px;
     overflow: clip;
     border-radius: .5rem;
+    cursor: pointer;
 }
 
 .image-card img{
@@ -264,6 +265,10 @@ body,html{
     cursor: default;
 }
 
+.dropdown-container button a i{
+    transition: 0.3s ease-in-out;
+}
+
 .dropdown-content{
     background-color: white;
     display: flex;
@@ -288,6 +293,50 @@ body,html{
 
 .dropdown-container:hover .dropdown-content{
     opacity: 100%;
+}
+
+.dropdown-container:hover button a i {
+    transform: rotate(180deg);
+}
+
+/* -- Image Page Nav -- */
+
+.image-page-nav-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.image-page-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+}
+
+.image-page-nav a{
+    color: gray;
+}
+
+.image-page-nav-number a{
+    color: white;
+    padding: .5rem 1rem;
+    text-decoration: none;
+}
+
+.image-page-nav-number{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    border-radius: .2rem;
+}
+
+.page-nav-number{
+    display: flex;
+    background-color: gray;
+}
+
+.page-nav-number.active{
+    background-color: #312FA7 !important;
 }
 
 
@@ -435,4 +484,51 @@ body,html{
 .footer-content-subscription button i{
     transform: rotate(-40deg);
     font-size: 1.5rem;
+}
+
+
+
+
+
+
+@media(max-width:1366px){
+    .image-contents{
+        margin-top: 2rem;
+        padding: 2rem 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-card{
+        width: 380px !important;
+        height: 230px !important;
+    }
+
+    .image-card-text{ 
+        top: 120%;
+        left: 70% !important;
+        width: 500px;
+    }
+
+    .image-card:hover .image-card-text{
+        top: 78%;
+    }
+
+    .image-card-text h3{
+        font-size: 1.3rem !important;
+    }
+    
+}
+
+@media(max-width:1920px){
+    .image-card{
+        width: 500px;
+        height: 260px;
+    }
+
+    .image-card-text{ 
+        top: 120%;
+        left: 55%;
+        width: 500px;
+    }
 }

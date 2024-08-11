@@ -205,17 +205,56 @@
         <h2>Status Stok Ikan</h2>
         <hr>
         <div class="card-stock-label-container">
-            <div class="card-stock-label">
-                <div class="card-stock-label-color"></div>
-        <p>Label Stock 1%</p>
+            <div class="card-stock-label" id="LabelStockRed">
+                <div class="card-stock-label-color red"></div>
+        <p>Red</p>
     </div>
-            <div class="card-stock-label">
-        <div class="card-stock-label-color"></div>
-<p>Label Stock 1%</p>
+            <div class="card-stock-label" id="LabelStockBlue">
+        <div class="card-stock-label-color blue"></div>
+        <p>Blue</p>
         </div>
     </div>
         <div class="card-content-frame-container">
-            <div class="card-content-frame">Contoh Gambar Grafik</div>
+            <div class="wave-container">
+                <svg id="WaveGraph" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <line x1="80" y1="20" x2="100%" y2="20" stroke="#ccc" stroke-width="1" class="bg-line"></line>
+                        <line x1="80" y1="90" x2="100%" y2="90" stroke="#ccc" stroke-width="1" class="bg-line"></line>
+                        <line x1="80" y1="160" x2="100%" y2="160" stroke="#ccc" stroke-width="1" class="bg-line"></line>
+                        <line x1="80" y1="250" x2="100%" y2="250" stroke="#ccc" stroke-width="1" class="bg-line"></line>
+
+                        <text x="0" y="25" font-size="1rem" fill="gray">Testing</text>
+                        <text x="0" y="95" font-size="1rem" fill="gray">Testing</text>
+                        <text x="0" y="165" font-size="1rem" fill="gray">Testing</text>
+                    </g>
+
+                    <g class="rect-container red">
+                        <rect x="100" y="100" width="60" height="150" fill="#b83b3b" class="rect"/>
+                    </g>
+
+                    <g class="rect-container blue">
+                        <rect x="170" y="150" width="60" height="100" fill="#312FA7" class="rect"/>
+                    </g>
+
+                    <g class="rect-container red">
+                        <rect x="290" y="100" width="60" height="150" fill="#b83b3b" class="rect"/>
+                    </g>
+
+                    <g class="rect-container blue">
+                        <rect x="360" y="150" width="60" height="100" fill="#312FA7" class="rect"/>
+                    </g>
+
+                    <g class="rect-container red">
+                        <rect x="460" y="20" width="60" height="300" fill="#b83b3b" class="rect"/>
+                    </g>
+
+                    <g class="rect-container blue">
+                        <rect x="530" y="150" width="60" height="100" fill="#312FA7" class="rect"/>
+                    </g>
+
+
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -230,6 +269,6 @@
 </div>
 </section>
 
-    
+<script src="/assets/js/statistik.js"></script>
 </body>
 </html>

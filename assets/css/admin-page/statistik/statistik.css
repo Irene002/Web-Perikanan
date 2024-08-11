@@ -348,6 +348,15 @@ color: rgb(177, 71, 71);
     justify-content: center;
 }
 
+.wave-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1rem 2rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
 /* -- Card Price Fishery -- */
 
 .card-content-top-wrapper{
@@ -490,6 +499,79 @@ color: rgb(177, 71, 71);
 
 
 
+/* -- Graph Card -- */
+
+svg{
+    width: 100%;
+    height: 100%;
+    overflow: clip;
+}
+
+.rect-container{
+    transform: translateY(100%);
+    transition: all 0.3s ease-in-out;
+}
+
+rect{
+    transition: all 0.3s ease-in-out;
+}
+
+.rect-container:hover rect{
+    filter:brightness(1.5);
+}
+
+
+.label-line{
+    filter:brightness(1.5);
+    
+}
+
+
+.label-box{
+    background-color: #4240d1;
+    padding: 1rem;
+}
+
+.rect-highlight-active{
+    filter:brightness(1.2);
+}
+
+.rect-highlight-inactive{
+    filter:brightness(.5);
+}
+
+/* -- Graph Content Animation-- */
+
+@keyframes slideUp{
+    from {
+        transform: translateY(100%);
+        height: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        height: 100px;
+    }
+}
+
+@keyframes slideDown {
+    from{
+        transform: translateY(0);
+        height: 100px;
+    }
+    to{
+        height: 0;
+        transform: translateY(100%);
+    }
+}
+
+.animate-up{
+    animation: slideUp 1s ease-out forwards;
+}
+
+.animate-down{
+    animation: slideDown 1s ease-in forwards;
+}
 
 /* -- Card Stock -- */
 .card-stock-label-container{
@@ -514,7 +596,14 @@ color: rgb(177, 71, 71);
 .card-stock-label-color{
     width: 1rem;
     height: 1rem;
+}
+
+.card-stock-label-color.blue{
     background-color: #312FA7;
+}
+
+.card-stock-label-color.red{
+    background-color: #b83b3b;
 }
 
 

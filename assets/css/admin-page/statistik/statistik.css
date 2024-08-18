@@ -17,6 +17,7 @@ body, html{
     overflow-x: hidden;
     height: 100%;
     width: 100%;
+    cursor: default;
 
 }
 
@@ -512,14 +513,14 @@ svg{
     transition: all 0.3s ease-in-out;
 }
 
-rect{
+#rect-container{
+    transform: translateY(100%);
     transition: all 0.3s ease-in-out;
 }
 
-.rect-container:hover rect{
-    filter:brightness(1.5);
+rect{
+    transition: all 0.3s ease-in-out;
 }
-
 
 .label-line{
     filter:brightness(1.5);
@@ -532,12 +533,8 @@ rect{
     padding: 1rem;
 }
 
-.rect-highlight-active{
-    filter:brightness(1.2);
-}
-
-.rect-highlight-inactive{
-    filter:brightness(.5);
+.in-active{
+    filter: brightness(.5);
 }
 
 /* -- Graph Content Animation-- */
@@ -581,29 +578,47 @@ rect{
     margin: 0 2rem;
 }
 
-.card-stock-label{
+.label{
     display: flex;
     flex-direction: row;
     gap: .5rem;
     align-items: center;
 }
 
-.card-stock-label p{
+
+.label p{
     width: fit-content;
     margin: 0;
 }
+
+/* -- Card Stock Labels Color -- */
 
 .card-stock-label-color{
     width: 1rem;
     height: 1rem;
 }
 
-.card-stock-label-color.blue{
-    background-color: #312FA7;
+.card-stock-label-color.deepskyblue{
+    background-color: #00BFFF;
+}
+.card-stock-label-color.silver{
+    background-color: #C0C0C0;
 }
 
-.card-stock-label-color.red{
-    background-color: #b83b3b;
+.card-stock-label-color.darkblue{
+    background-color: #00008B;
+}
+
+.card-stock-label-color.orangered{
+    background-color: #FF4500;
+}
+
+.card-stock-label-color.limegreen{
+    background-color: #00FF00;
+}
+
+.card-stock-label-color.gold{
+    background-color: #FFD700;
 }
 
 
@@ -615,3 +630,26 @@ rect{
 /* -- Styles for mobile devices -- */
 
 /* -- Mobile Phones -- */
+
+@media(max-width:1366px){
+    .rect-one{
+       transform: translateX(35px);
+    }
+
+    .rect-two{
+        transform: translateX(60px);
+     }
+
+     .rect-three{
+        transform: translateX(85px);
+     }
+     .rect-four{
+        transform: translateX(110px);
+     }
+     .rect-five{
+        transform: translateX(135px);
+     }
+     .rect-six{
+        transform: translateX(160px);
+     }
+}

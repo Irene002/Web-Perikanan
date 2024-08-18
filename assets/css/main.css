@@ -472,6 +472,7 @@ h1{
 @media (max-width:1366px){
     .sec1-header h1, span{
         font-size: 4rem !important;
+        width: 800px;
     }
 
     .sec2{

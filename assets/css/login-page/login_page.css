@@ -9,9 +9,7 @@ body, html{
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 /* -- Navbar --  */
@@ -84,10 +82,13 @@ body, html{
     cursor:default;
 }
 
+/* -- Login --  */
+
 .login-overlay{
     margin-top: 7rem;
     margin-bottom: 5rem;
     width: 100%;
+    height: 42rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +129,7 @@ body, html{
 }
 
 .login-box-contents a{
-    margin-top: 1rem;
+    margin: 0;
     display: flex;
     justify-content: end;
     color: blue;
@@ -362,6 +363,10 @@ footer::before{
 }
 
 @media (max-width: 375px){
+    body,html{
+        overflow: visible;
+    }
+
     .login-box{
        min-width: 100% !important;
     }
@@ -388,6 +393,11 @@ footer::before{
 }
 
 @media (max-width: 480px){
+
+    body,html{
+        overflow: visible;
+    }
+
     .login-box{
         min-width: 100% !important;
     }
@@ -416,6 +426,11 @@ footer::before{
 }
 
 @media (max-width: 1024px){
+
+    body,html{
+        overflow: visible;
+    }
+
     .login-box{
         min-width: 90%;
     }
@@ -446,12 +461,22 @@ footer::before{
 
 
 @media(max-width:1366px){
+
+    body,html{
+        overflow: visible;
+    }
+
     .login-box{
         width: 60% !important;
     }
 }
 
 @media(max-width:1920px){
+
+    body,html{
+        overflow: visible;
+    }
+
     .login-box{
         min-width: 40%;
     }

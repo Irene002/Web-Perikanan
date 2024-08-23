@@ -94,13 +94,15 @@ h1{
     margin: 0;
     position: absolute;
     z-index: 1;
-    top: 30%;
+    top: 25%;
     left: 5%;
+    width: 70rem;
 }
 
 .sec1-header h1{
     font-size: 5rem;
     color: white;
+    width: 70rem;
 }
 
 .sec1-header-top-wrapper{
@@ -136,28 +138,45 @@ h1{
     filter: brightness(.5);
 }
 
+.sec1-background{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.sec1-background img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(.5);
+}
+
 /* -- Section 2 -- */
 .sec2{
-   padding: 10rem;
     background: linear-gradient(to bottom, #EEF2FF, #CBE5F8);
     overflow: hidden;
+    height: 35rem;
 }
 
 .sec2-contents{
-    margin: 0 2rem;
+    margin: 0 10rem;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .sec2-contents-header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     gap: 1rem;
 }
 
 .sec2-contents-header h2{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 /* -- Section 2 Cards -- */
@@ -283,8 +302,19 @@ h1{
 
 /* -- Section 4 -- */
 .sec4{
-    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
     background: linear-gradient(to bottom, #EEF2FF, #CBE5F8);
+}
+
+.sec4 h2{
+
+    margin-bottom: 3rem;
+    font-size: 3rem;
+
 }
 
 .sec4 a{
@@ -354,12 +384,13 @@ h1{
     display: flex;
     flex-direction: row;
     padding: 2rem 3rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .footer-content.left{
     margin: 0;
+    width: 35rem;
 }
 
 .footer-content-left-btn{
@@ -372,10 +403,6 @@ h1{
 .footer-content-left-btn a{
     text-decoration: none;
     color: white;
-    padding: 1rem;
-}
-
-.footer-content.left p{
     padding: 1rem;
 }
 
@@ -467,25 +494,113 @@ h1{
 
 /* -- Style for other media -- */
 
-/* -- Small Laptop -- */
 
-@media (max-width:1366px){
-    .sec1-header h1, span{
-        font-size: 4rem !important;
-        width: 800px;
+@media (max-width:394px){
+
+    .sec1 video {
+        display: none !important;
+    }
+
+    .sec1{
+        height: 25rem;
+    }
+
+    .sec1-header{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .sec1-header-top-wrapper{
+        flex-direction: column;
+    }
+
+    .sec1-header-top-wrapper h2{
+        font-size: 1rem;
+        width: 400px;
+    }
+    
+    .sec1-background{
+        display: flex !important;
+    }
+
+    .sec1-header h1,span{
+        font-size: 2rem !important;
+        width: 300px !important;
+        line-height: 1.3;
     }
 
     .sec2{
-        padding: 10rem 2rem;
+        padding: 3rem 1rem !important;
+    }
+
+    .sec2-contents-header h2, p{
+        text-align: center;
+    }
+
+    .sec2-contents-header{
+        margin-bottom: 2rem;
+    }
+
+    .sec2-card-wrapper{
+        flex-direction: column;
+    }
+
+    .sec3-card-wrapper-row{
+        flex-direction: column;
+    }
+
+    .sec3-card-content{
+        top: 50%;
+        width: 300px;
+    }
+
+    .sec4{
+        padding: 2rem 1rem !important;
+    }
+
+    .sec4-card-wrapper{
+        flex-direction: column;
+        gap: 2rem !important;
+    }
+
+    .sec4-card-image-frame{
+        width: 19rem !important;
+        height: 20rem !important;
+        background-position: center;
+    }
+
+}
+
+/* -- Small Laptop -- */
+
+@media (max-width:1366px){
+
+    .sec1 video {
+        display: flex;
+    }
+    
+    .sec1-background{
+        display: none;
+    }
+
+
+    .sec1-header h1, span{
+        font-size: 4rem;
+        width: 800px;
     }
 
     .sec3-card-container{
         height: 400px;
     }
 
-    .sec4{
-        padding-left: 3rem;
-        padding-right: 3rem;
+    .sec2-contents{
+        margin: 0 3rem;
     }
 
     .sec4-card-wrapper{

@@ -254,9 +254,13 @@ color: rgb(177, 71, 71);
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
-    padding: 0 1rem;
+    padding-left: 2rem;
     gap: 1rem;
     align-items: center;
+}
+
+.sidebar-account-footer h3{
+    font-size: 1rem;
 }
 
 .sidebar-account-footer-image{
@@ -265,12 +269,13 @@ color: rgb(177, 71, 71);
     display: flex;
     border-radius: 90rem;
     border: solid 1px white;
+    overflow: clip;
 }
 
 .sidebar-account-footer-image img{
     width: 100%;
     height: auto;
-    border-radius: 90rem;
+    object-fit: cover;
 }
 /* -- Cards -- */
 
@@ -302,7 +307,6 @@ color: rgb(177, 71, 71);
     width: 100%;
     background-color: white;
     margin-bottom: 2rem;
-    padding: 1rem 0;
 }
 
 .card-user-settings p{
@@ -314,8 +318,6 @@ color: rgb(177, 71, 71);
     border-radius: 1rem;
     background-color: white;
     width: 100%;
-    padding: 1rem 0;
-    margin-bottom: 2rem;
 }
 
 .card-stats p{
@@ -328,7 +330,6 @@ color: rgb(177, 71, 71);
     width: 100%;
     background-color: white;
     padding: 1rem 0;
-    margin-right: 2rem;
 }
 
 .card-pelabuhan p{
@@ -345,7 +346,9 @@ color: rgb(177, 71, 71);
 
 .card-contents{
     margin: 0;
-    padding: 1rem;
+    padding: 0 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 .card-contents h2{
@@ -385,6 +388,7 @@ color: rgb(177, 71, 71);
 .card-container{
     display: flex;
     flex-direction: row;
+    gap: 2rem;
 }
 
 .card-wrapper{
@@ -392,7 +396,6 @@ color: rgb(177, 71, 71);
     display: flex;
     flex-direction: column;
     width: 60%;
-    margin-right: 2rem;
 }
 
 .card-button-wrapper a{
@@ -426,11 +429,6 @@ color: rgb(177, 71, 71);
 
     .card-wrapper{
         width: 100%;
-        margin-bottom: 2rem;
-    }
-
-    .card-pelabuhan{
-        margin-bottom: 2rem;
     }
 
     .card-calendar{

@@ -12,6 +12,8 @@ body,html{
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    user-select: none;
+    cursor: default;
 }
 
 h1{
@@ -169,12 +171,17 @@ h1{
     padding-left: 1rem;
     justify-content: space-between;
     border-radius: 5px;
-    width: 20%;
+    width: 30%;
 }
 
 .card-content-top-wrapper form input,button{
     background: none;
     border: none;
+}
+
+.card-content-top-wrapper form input button i{
+    width: 100%;
+    height: 100%;
 }
 
 .card-content-top-wrapper form button{

@@ -485,8 +485,28 @@ body,html{
     font-size: 1.5rem;
 }
 
+@media(max-width:1537px) {
+    .image-card-text{
+        left: 90%;
+    }
+}
+
 @media(max-width:1920px){
     .image-card-text{
-        left: 50%;
+        left: 46%;
+    }
+}
+
+@media(max-width:1280px){
+    .image-card-text{
+        left: 75%;
+    }
+
+    .image-card-text h3{
+        width: 300px;
+    }
+
+    .image-card:hover .image-card-text{
+        top: 76%;
     }
 }
